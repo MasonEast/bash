@@ -20,7 +20,7 @@ if [ ! -f $ZIP_FILE ]; then
 fi
 
 # 解压新的zip包
-unzip $ZIP_FILE -d "./dist-prod" || { echo "Failed to unzip $ZIP_FILE"; exit 1; }
+unzip $ZIP_FILE -d $EXTRACT_DIR || { echo "Failed to unzip $ZIP_FILE"; exit 1; }
 
 # 备份zip包
 if [ -f $ZIP_FILE ]; then
