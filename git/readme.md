@@ -11,3 +11,11 @@
 - ci: 修改持续集成配置文件和脚本。
 - chore: 其他不修改 src 或测试文件的更改，比如更新构建任务、包管理。
 - revert: 撤销某次提交。
+
+# 忽略已提交的文件
+
+```bash
+git rm --cached .env
+
+git commit -m "remove .env"
+```
