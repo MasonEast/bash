@@ -12,10 +12,27 @@
 - chore: 其他不修改 src 或测试文件的更改，比如更新构建任务、包管理。
 - revert: 撤销某次提交。
 
-# 忽略已提交的文件
+## 忽略已提交的文件
 
 ```bash
 git rm --cached .env
 
 git commit -m "remove .env"
+```
+
+## 代码回滚
+
+```bash
+git reset --hard HEAD^ # 回退到上一个版本
+
+git push --force # 强制提交，覆盖远程仓库
+
+git revert <commit_id> # 撤销某次提交
+
+```
+
+## 代码合并某次提交
+
+```bash
+git cherry-pick <commit_id> # 合并某次提交
 ```
