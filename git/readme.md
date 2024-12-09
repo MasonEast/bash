@@ -20,6 +20,18 @@ git rm --cached .env
 git commit -m "remove .env"
 ```
 
+### 暂时忽略某个文件的更改，而不需要将该文件从版本控制中移除
+
+```bash
+git update-index --assume-unchanged <file>
+```
+
+### 取消忽略某个文件
+
+```bash
+git update-index --no-assume-unchanged <file>
+```
+
 ## 代码回滚
 
 ```bash
