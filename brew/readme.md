@@ -17,3 +17,8 @@
 处理数据目录权限，可能需要创建目录并设置权限（如网页7提到的/usr/local/var/mongodb或Catalina之后的系统路径）
 启动服务：brew services start mongodb-community
 验证安装，连接MongoDB shell。
+
+```bash
+# 强制启动命令
+/Users/mac/Downloads/mongodb-macos-x86_64-6.0.22/bin/mongod --dbpath /System/Volumes/Data/data/db
+```
